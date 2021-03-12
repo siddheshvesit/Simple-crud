@@ -8,5 +8,6 @@ public class Query {
 	public String addDetails="insert into details (name) values(?);";
 	public String deleteDetails="delete from  details where id=?;";
 	public String finddetailsbyid="select * from details where id=?;";
+	public String updateDetails="update details set name=? where id=?;";
 
 }

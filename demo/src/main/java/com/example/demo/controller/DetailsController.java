@@ -57,6 +57,13 @@ public class DetailsController {
 	List abc=detailservice.findDetailsById(id);
 	return abc;
 	}
+	@RequestMapping(value="/updateDetails/{id}")
+	public void updateDetails(@PathVariable("id") int id ,@RequestBody Details det)
+	{	
+		String methodname="details controller";
+		logs.dolog(methodname);
+		detailservice.updateDetails(id, det);
+	}
 
 
 }

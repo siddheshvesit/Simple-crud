@@ -11,4 +11,5 @@ public List getAllDetails();
 public void addDetails(Details det);
 public void deleteDetails(int id);
 public List findDetailsById(int id);
+public void updateDetails(int id ,Details det);
 }

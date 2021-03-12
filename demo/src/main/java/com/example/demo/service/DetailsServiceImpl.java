@@ -46,5 +46,12 @@ public class DetailsServiceImpl implements DetailsService {
 		return detailsrepo.findDetailsById(id);
 		
 	}
+	@Override
+	public void updateDetails(int id, Details det) {
+		// TODO Auto-generated method stub
+		String mehtodname="detailsserviceimpl...updateDetails";
+		logs.dolog(mehtodname);
+		detailsrepo.updateDetails(id, det);
+	}
 
 }

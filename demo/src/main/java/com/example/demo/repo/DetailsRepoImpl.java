@@ -68,6 +68,16 @@ public class DetailsRepoImpl implements DetailsRepo {
 		return jdbctemplate.queryForList(abc,id);
 		
 	}
+
+	@Override
+	public void updateDetails(int id, Details det) {
+		// TODO Auto-generated method stub
+		String methodname="detailrepoimpl...updateDetails";
+		logs.dolog(methodname);
+		String abc=querys.updateDetails;
+		jdbctemplate.update(abc, det.getName(),id);
+	}
+	
 		
 }
  class rowmapper implements RowMapper<Details>{
